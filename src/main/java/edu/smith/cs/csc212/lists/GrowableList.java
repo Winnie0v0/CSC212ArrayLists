@@ -88,13 +88,12 @@ public class GrowableList<T> extends ListADT<T> {
 		checkInclusiveIndex(index);
 		if (fill >= array.size()) {
 			resizeArray();
-		} else {
-			for (int i = fill; i > index; i--) { 
-				array.setIndex(i, array.getIndex(i-1));
-			} 
-		    array.setIndex(index, item);
-		    fill++;
-		}
+		} 
+		for (int i = fill; i > index; i--) { 
+			array.setIndex(i, array.getIndex(i-1));
+		} 
+		array.setIndex(index, item);
+		fill++;
 	}
 
 	@Override
