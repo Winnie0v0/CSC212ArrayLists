@@ -1,3 +1,9 @@
+---
+noteId: "a7ba48d0752311eaad024f659aaeb423"
+tags: []
+
+---
+
 # CSC212ArrayLists
 Array-based List Data Structures via Testing 
 
