@@ -78,7 +78,8 @@ public class GrowableList<T> extends ListADT<T> {
 	 */
 	private void resizeArray() {
 		ArrayWrapper<T> bigger = new ArrayWrapper<>(this.array.size() * 2);
-		for (int i = 0; i < this.array.size(); i++) { bigger.setIndex(i, this.array.getIndex(i));
+		for (int i = 0; i < this.array.size(); i++) { 
+			bigger.setIndex(i, this.array.getIndex(i));
 		}
 		this.array = bigger;
 	}
