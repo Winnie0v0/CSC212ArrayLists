@@ -87,7 +87,9 @@ public class FixedSizeList<T> extends ListADT<T> {
 	@Override
 	public void addBack(T value) {
 		if (fill < array.size()) {
-			array.setIndex(fill++, value);
+			array.setIndex(fill, value);
+			fill++;
+			// array.setIndex(fill++, value);
 		} else {
 			throw new RanOutOfSpaceError();
 		}
